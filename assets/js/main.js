@@ -5,11 +5,11 @@ function navigateTo(page) {
 
 // Funciones para botones de contacto
 function callPhone() {
-    window.location.href = 'tel:+57 664-151-8081';
+    window.location.href = 'tel:+5216641518081';
 }
 
 function openWhatsApp() {
-    window.open('https://wa.me/57664151808', '_blank');
+    window.open('https://wa.me/5216641518081', '_blank');
 }
 
 function sendEmail() {
