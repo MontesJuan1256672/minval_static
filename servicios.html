@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - MinVal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="assets/images/minval_logo.jpg" alt="MinVal Logo" class="h-12">
+            </div>
+            
+            <!-- Menú Desktop -->
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-amber-600 transition">Inicio</a>
+                <a href="servicios.html" class="font-semibold" style="color: var(--primary);">Servicios</a>
+                <a href="privacy.html" class="hover:text-amber-600 transition">Sobre Nosotros</a>
+            </div>
+
+            <!-- Botón Menú Móvil -->
+            <button onclick="toggleMobileMenu()" class="md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Menú Móvil -->
+        <div id="mobileMenu" class="hidden md:hidden bg-gray-50 border-t">
+            <a href="index.html" class="block px-4 py-2">Inicio</a>
+            <a href="servicios.html" class="block px-4 py-2" style="color: var(--primary);">Servicios</a>
+            <a href="privacy.html" class="block px-4 py-2">Sobre Nosotros</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-primary text-white py-16 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold mb-4">Nuestros Servicios</h1>
+            <p class="text-xl opacity-95">Soluciones integrales en valuación de bienes raíces adaptadas a tus necesidades específicas</p>
+        </div>
+    </section>
+
+    <!-- Main Services Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Avalúo Fiscal -->
+            <div class="mb-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-bold text-gray-900 mb-6">Avalúo Fiscal</h2>
+                        <p class="text-gray-600 text-lg mb-4">
+                            Valuación integral de propiedades para fines tributarios y catastrales. Nuestros avalúos garantizan cumplimiento normativo con autoridades fiscales y son aceptados por DIAN y entidades territoriales.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check mr-3 mt-1" style="color: var(--primary);"></i>
+                                <span class="text-gray-700"><strong>Metodología Catastral:</strong> Aplicación de estándares fiscales vigentes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mr-3 mt-1" style="color: var(--primary);"></i>
+                                <span class="text-gray-700"><strong>Cumplimiento Normativo:</strong> Acorde con normas DIAN y entidades territoriales</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mr-3 mt-1" style="color: var(--primary);"></i>
+                                <span class="text-gray-700"><strong>Documentación Completa:</strong> Registros técnicos detallados y validados</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mr-3 mt-1" style="color: var(--primary);"></i>
+                                <span class="text-gray-700"><strong>Defensabilidad Legal:</strong> Informes sustentados ante autoridades fiscales</span>
+                            </li>
+                        </ul>
+                        <div class="flex gap-4 flex-wrap">
+                            <button onclick="openWhatsApp()" class="btn-primary">
+                                Solicitar Avalúo
+                            </button>
+                            <button onclick="callPhone()" class="border-2 px-8 py-3 rounded-lg font-bold" style="border-color: var(--primary); color: var(--primary);">
+                                Llamar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 p-12 rounded-lg text-center">
+                        <i class="fas fa-file-invoice-dollar" style="font-size: 200px; color: var(--primary); opacity: 0.2;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Estimación de Valor -->
+            <div class="mb-20 border-t pt-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="bg-gray-100 p-12 rounded-lg text-center order-2 md:order-1">
+                        <i class="fas fa-chart-line" style="font-size: 200px; color: var(--accent); opacity: 0.2;"></i>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h2 class="text-4xl font-bold text-gray-900 mb-6">Estimación de Valor</h2>
+                        <p class="text-gray-600 text-lg mb-4">
+                            Análisis rápido y preciso del valor de mercado de propiedades para transacciones, refinanciamientos, decisiones de inversión y gestiones comerciales inmobiliarias.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check mr-3 mt-1" style="color: var(--accent);"></i>
+                                <span class="text-gray-700"><strong>Análisis de Mercado Actual:</strong> Estudio de precios comparables actualizados</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mr-3 mt-1" style="color: var(--accent);"></i>
+                                <span class="text-gray-700"><strong>Evaluación de Características:</strong> Comparación detallada de atributos físicos y de ubicación</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mr-3 mt-1" style="color: var(--accent);"></i>
+                                <span class="text-gray-700"><strong>Análisis de Tendencias:</strong> Comportamiento del sector y perspectivas de valor</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mr-3 mt-1" style="color: var(--accent);"></i>
+                                <span class="text-gray-700"><strong>Informes Ejecutivos:</strong> Documentos claros y accesibles para decisiones comerciales</span>
+                            </li>
+                        </ul>
+                        <div class="flex gap-4 flex-wrap">
+                            <button onclick="openWhatsApp()" class="btn-accent">
+                                Solicitar Estimación
+                            </button>
+                            <button onclick="callPhone()" class="border-2 px-8 py-3 rounded-lg font-bold" style="border-color: var(--accent); color: var(--accent);">
+                                Llamar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Acta de Levantamiento -->
+            <div class="mb-20 border-t pt-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-bold text-gray-900 mb-6">Acta de Levantamiento</h2>
+                        <p class="text-gray-600 text-lg mb-4">
+                            Documento técnico detallado que describe las características físicas, linderos, estado actual y conformación de la propiedad. Válido legalmente para transacciones, trámites catastales y procedimientos legales.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check mr-3 mt-1" style="color: #556b2f;"></i>
+                                <span class="text-gray-700"><strong>Descripción Completa:</strong> Detalle exhaustivo de características y condiciones del inmueble</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mr-3 mt-1" style="color: #556b2f;"></i>
+                                <span class="text-gray-700"><strong>Especificación de Linderos:</strong> Identificación precisa de límites y colindantes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mr-3 mt-1" style="color: #556b2f;"></i>
+                                <span class="text-gray-700"><strong>Validez Legal:</strong> Aceptado por autoridades catastrales y entidades territoriales</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check mr-3 mt-1" style="color: #556b2f;"></i>
+                                <span class="text-gray-700"><strong>Planos Técnicos:</strong> Visualización gráfica de la propiedad y sus características</span>
+                            </li>
+                        </ul>
+                        <div class="flex gap-4 flex-wrap">
+                            <button onclick="openWhatsApp()" class="btn-primary" style="background-color: #556b2f;">
+                                Solicitar Acta
+                            </button>
+                            <button onclick="callPhone()" class="border-2 px-8 py-3 rounded-lg font-bold" style="border-color: #556b2f; color: #556b2f;">
+                                Llamar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 p-12 rounded-lg text-center">
+                        <i class="fas fa-clipboard-list" style="font-size: 200px; color: #556b2f; opacity: 0.2;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-16">Servicios Complementarios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        <i class="fas fa-map mr-3" style="color: var(--primary);"></i>Acta de Deslinde
+                    </h3>
+                    <p class="text-gray-600">Documento que establece los límites exactos de una propiedad cuando existen discrepancias con datos registrales o disputas de linderos entre propiedades colindantes.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        <i class="fas fa-drafting-compass mr-3" style="color: var(--accent);"></i>Plano no Acta
+                    </h3>
+                    <p class="text-gray-600">Representación gráfica detallada de la propiedad sin declaración jurada, usada para trámites administrativos, catastro y documentación técnica de inmuebles.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        <i class="fas fa-building mr-3" style="color: #556b2f;"></i>Planta Arquitectónica
+                    </h3>
+                    <p class="text-gray-600">Planos técnicos que muestran la distribución de espacios, diseño arquitectónico y conformación constructiva de edificios y construcciones.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        <i class="fas fa-file-check mr-3" style="color: #d4636d;"></i>Libertad de Gravámen
+                    </h3>
+                    <p class="text-gray-600">Certificación que comprueba que una propiedad no tiene gravámenes, hipotecas u obligaciones legales que afecten su disposición libre.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gray-50 py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">¿Necesitas alguno de nuestros servicios?</h2>
+            <p class="text-xl text-gray-600 mb-8">Contáctanos hoy y obtén una valuación profesional en 24-48 horas</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button onclick="callPhone()" class="btn-primary">
+                    <i class="fas fa-phone mr-2"></i>Llamar: 664-151-8081
+                </button>
+                <button onclick="openWhatsApp()" class="btn-accent">
+                    <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                </button>
+                <button onclick="sendEmail()" class="border-2 px-8 py-3 rounded-lg font-bold transition" style="border-color: var(--primary); color: var(--primary);">
+                    <i class="fas fa-envelope mr-2"></i>Email
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">MinVal</h4>
+                    <p class="opacity-90">Servicios profesionales de valuación inmobiliaria en Tijuana, B.C.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Servicios</h4>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="servicios.html" class="hover:text-white transition">Avalúo Fiscal</a></li>
+                        <li><a href="servicios.html" class="hover:text-white transition">Estimación de Valor</a></li>
+                        <li><a href="servicios.html" class="hover:text-white transition">Acta de Levantamiento</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Empresa</h4>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="privacy.html" class="hover:text-white transition">Sobre Nosotros</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition">Equipo</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition">Certificaciones</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Contacto</h4>
+                    <p class="text-sm mb-3 opacity-90"><i class="fas fa-phone mr-2"></i><a href="tel:+57 664-151-8081" class="hover:text-white transition">664-151-8081</a></p>
+                    <p class="text-sm mb-3 opacity-90"><i class="fab fa-whatsapp mr-2"></i><a href="https://wa.me/57664151808" class="hover:text-white transition" target="_blank">WhatsApp</a></p>
+                    <p class="text-sm mb-3 opacity-90"><i class="fas fa-envelope mr-2"></i>info@minval.com.co</p>
+                    <p class="text-sm opacity-90"><i class="fas fa-map-marker-alt mr-2"></i>Tijuana, B.C.</p>
+                </div>
+            </div>
+            <div class="border-t border-opacity-20 pt-8 text-center text-sm opacity-75">
+                <p>&copy; 2026 MinVal - Servicios de Valuación Inmobiliaria. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

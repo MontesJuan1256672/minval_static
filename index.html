@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinVal - Servicios de Valuación Inmobiliaria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="assets/images/minval_logo.jpg" alt="MinVal Logo" class="h-12">
+            </div>
+            
+            <!-- Menú Desktop -->
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-semibold" style="color: var(--primary);">Inicio</a>
+                <a href="servicios.html" class="hover:text-amber-600 transition">Servicios</a>
+                <a href="privacy.html" class="hover:text-amber-600 transition">Sobre Nosotros</a>
+            </div>
+
+            <!-- Botón Menú Móvil -->
+            <button onclick="toggleMobileMenu()" class="md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Menú Móvil -->
+        <div id="mobileMenu" class="hidden md:hidden bg-gray-50 border-t">
+            <a href="index.html" class="block px-4 py-2" style="color: var(--primary);">Inicio</a>
+            <a href="servicios.html" class="block px-4 py-2">Servicios</a>
+            <a href="privacy.html" class="block px-4 py-2">Sobre Nosotros</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-primary text-white py-24 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Valuación Inmobiliaria Profesional</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-95">18 años de experiencia en Tijuana, B.C.</p>
+            <p class="text-lg opacity-90 mb-8">Avalúos fiscales, estimaciones de valor y documentación técnica de propiedades</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button onclick="openWhatsApp()" class="btn-primary">
+                    <i class="fab fa-whatsapp mr-2"></i>Contactar por WhatsApp
+                </button>
+                <a href="servicios.html" class="border-2 border-white px-8 py-3 rounded-lg font-bold text-white hover:bg-white hover:text-amber-600 transition">
+                    Ver Servicios
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16" style="color: var(--text-dark);">¿Por qué elegirnos?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Expertos -->
+                <div class="feature-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl p-8 text-center">
+                    <i class="fas fa-certificate text-6xl mb-4" style="color: var(--primary);"></i>
+                    <h3 class="text-2xl font-bold mb-3">Expertos Certificados</h3>
+                    <p class="text-gray-600">Profesionales con certificaciones internacionales IVSC y experiencia en valuación inmobiliaria</p>
+                </div>
+
+                <!-- Rapidez -->
+                <div class="feature-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl p-8 text-center">
+                    <i class="fas fa-tachometer-alt text-6xl mb-4" style="color: var(--accent);"></i>
+                    <h3 class="text-2xl font-bold mb-3">Entrega Rápida</h3>
+                    <p class="text-gray-600">Avalúos realizados en 24-48 horas sin comprometer la calidad técnica</p>
+                </div>
+
+                <!-- Confiabilidad -->
+                <div class="feature-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl p-8 text-center">
+                    <i class="fas fa-shield-alt text-6xl mb-4" style="color: #556b2f;"></i>
+                    <h3 class="text-2xl font-bold mb-3">100% Confiable</h3>
+                    <p class="text-gray-600">Informes validados legalmente y aceptados por autoridades fiscales y financieras</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Preview -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16">Nuestros Servicios Principales</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Avalúo Fiscal -->
+                <div class="feature-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl">
+                    <div class="h-40 flex items-center justify-center" style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);">
+                        <i class="fas fa-file-invoice-dollar text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Avalúo Fiscal</h3>
+                        <p class="text-gray-600 mb-4">Valoración de propiedades para fines tributarios y catastro. Garantiza cumplimiento normativo.</p>
+                        <a href="servicios.html" class="font-bold transition" style="color: var(--primary);">Más información <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Estimación de Valor -->
+                <div class="feature-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl">
+                    <div class="h-40 flex items-center justify-center" style="background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);">
+                        <i class="fas fa-chart-line text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Estimación de Valor</h3>
+                        <p class="text-gray-600 mb-4">Análisis rápido y preciso del valor de mercado para transacciones e inversión.</p>
+                        <a href="servicios.html" class="font-bold transition" style="color: var(--accent);">Más información <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Acta de Levantamiento -->
+                <div class="feature-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl">
+                    <div class="h-40 flex items-center justify-center" style="background: linear-gradient(135deg, #556b2f 0%, #6b8e23 100%);">
+                        <i class="fas fa-clipboard-list text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Acta de Levantamiento</h3>
+                        <p class="text-gray-600 mb-4">Documento técnico de características, linderos y estado actual con validez legal.</p>
+                        <a href="servicios.html" class="font-bold transition" style="color: #556b2f;">Más información <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="section-primary text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <h3 class="text-5xl font-bold mb-2">750+</h3>
+                    <p class="text-xl opacity-90">Valuaciones Realizadas</p>
+                </div>
+                <div>
+                    <h3 class="text-5xl font-bold mb-2">18+</h3>
+                    <p class="text-xl opacity-90">Años de Experiencia</p>
+                </div>
+                <div>
+                    <h3 class="text-5xl font-bold mb-2">99%</h3>
+                    <p class="text-xl opacity-90">Satisfacción de Clientes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16">Nuestro Proceso</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: var(--primary); color: white;">
+                        <i class="fas fa-phone text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">1. Contacto</h3>
+                    <p class="text-gray-600">Comunícate con nosotros y cuéntanos sobre tu propiedad</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: var(--accent); color: white;">
+                        <i class="fas fa-calendar text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">2. Agendamiento</h3>
+                    <p class="text-gray-600">Programamos una cita para inspeccionar el inmueble</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: #556b2f; color: white;">
+                        <i class="fas fa-laptop text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">3. Análisis</h3>
+                    <p class="text-gray-600">Realizamos estudio técnico detallado del inmueble</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style="background-color: #20b2aa; color: white;">
+                        <i class="fas fa-file-check text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">4. Entrega</h3>
+                    <p class="text-gray-600">Recibes tu informe profesional completamente elaborado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gray-50 py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">¿Necesitas una Valuación?</h2>
+            <p class="text-xl text-gray-600 mb-8">Contáctanos hoy y obtén una valuación profesional en 24-48 horas</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button onclick="callPhone()" class="btn-primary">
+                    <i class="fas fa-phone mr-2"></i>Llamar: 664-151-8081
+                </button>
+                <button onclick="openWhatsApp()" class="btn-accent">
+                    <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                </button>
+                <button onclick="sendEmail()" class="border-2 px-8 py-3 rounded-lg font-bold transition" style="border-color: var(--primary); color: var(--primary);">
+                    <i class="fas fa-envelope mr-2"></i>Email
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">MinVal</h4>
+                    <p class="opacity-90">Servicios profesionales de valuación inmobiliaria en Tijuana, B.C.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Servicios</h4>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="servicios.html" class="hover:text-white transition">Avalúo Fiscal</a></li>
+                        <li><a href="servicios.html" class="hover:text-white transition">Estimación de Valor</a></li>
+                        <li><a href="servicios.html" class="hover:text-white transition">Acta de Levantamiento</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Empresa</h4>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li><a href="privacy.html" class="hover:text-white transition">Sobre Nosotros</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition">Equipo</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition">Certificaciones</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">Contacto</h4>
+                    <p class="text-sm mb-3 opacity-90"><i class="fas fa-phone mr-2"></i><a href="tel:+57 664-151-8081" class="hover:text-white transition">664-151-8081</a></p>
+                    <p class="text-sm mb-3 opacity-90"><i class="fab fa-whatsapp mr-2"></i><a href="https://wa.me/57664151808" class="hover:text-white transition" target="_blank">WhatsApp</a></p>
+                    <p class="text-sm mb-3 opacity-90"><i class="fas fa-envelope mr-2"></i>info@minval.com.co</p>
+                    <p class="text-sm opacity-90"><i class="fas fa-map-marker-alt mr-2"></i>Tijuana, B.C.</p>
+                </div>
+            </div>
+            <div class="border-t border-opacity-20 pt-8 text-center text-sm opacity-75">
+                <p>&copy; 2026 MinVal - Servicios de Valuación Inmobiliaria. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
