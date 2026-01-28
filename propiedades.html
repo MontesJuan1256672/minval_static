@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades en Venta - MinVal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="assets/images/minval_logo.jpg" alt="MinVal Logo" class="h-12">
+            </div>
+            
+            <!-- Menú Desktop -->
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-amber-600 transition">Inicio</a>
+                <a href="servicios.html" class="hover:text-amber-600 transition">Servicios</a>
+                <a href="propiedades.html" class="font-semibold" style="color: var(--primary);">Propiedades</a>
+                <a href="privacy.html" class="hover:text-amber-600 transition">Sobre Nosotros</a>
+            </div>
+
+            <!-- Botón Menú Móvil -->
+            <button onclick="toggleMobileMenu()" class="md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Menú Móvil -->
+        <div id="mobileMenu" class="hidden md:hidden bg-gray-50 border-t">
+            <a href="index.html" class="block px-4 py-2">Inicio</a>
+            <a href="servicios.html" class="block px-4 py-2">Servicios</a>
+            <a href="propiedades.html" class="block px-4 py-2" style="color: var(--primary);">Propiedades</a>
+            <a href="privacy.html" class="block px-4 py-2">Sobre Nosotros</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-primary text-white py-16 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold mb-4">Propiedades en Venta</h1>
+            <p class="text-xl opacity-95">Descubre nuestro portafolio de bienes raíces disponibles en Tijuana, B.C.</p>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <section class="py-8 bg-gray-50 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-4">
+                <button onclick="filterProperties('all')" class="filter-btn active px-6 py-2 rounded-lg font-semibold transition" style="background-color: var(--primary); color: white;">
+                    Todas las Propiedades
+                </button>
+                <button onclick="filterProperties('casa')" class="filter-btn px-6 py-2 rounded-lg font-semibold transition border-2" style="border-color: var(--primary); color: var(--primary);">
+                    <i class="fas fa-home mr-2"></i>Casas
+                </button>
+                <button onclick="filterProperties('departamento')" class="filter-btn px-6 py-2 rounded-lg font-semibold transition border-2" style="border-color: var(--primary); color: var(--primary);">
+                    <i class="fas fa-building mr-2"></i>Departamentos
+                </button>
+                <button onclick="filterProperties('terreno')" class="filter-btn px-6 py-2 rounded-lg font-semibold transition border-2" style="border-color: var(--primary); color: var(--primary);">
+                    <i class="fas fa-square mr-2"></i>Terrenos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Propiedades Grid -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="propertiesContainer">
+                <!-- Las propiedades se cargarán aquí mediante JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">¿Te interesa alguna propiedad?</h2>
+            <p class="text-xl text-gray-600 mb-8">Contacta con nosotros para más información o agendar una visita</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button onclick="openWhatsApp()" class="btn-primary">
+                    <i class="fab fa-whatsapp mr-2"></i>Contactar por WhatsApp
+                </button>
+                <button onclick="callPhone()" class="btn-accent">
+                    <i class="fas fa-phone mr-2"></i>Llamar Directamente
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Sobre MinVal -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MinVal</h3>
+                    <p class="text-sm opacity-90">Expertos en valuación inmobiliaria con 18 años de experiencia en Tijuana, B.C.</p>
+                </div>
+
+                <!-- Enlaces Rápidos -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Enlaces</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="opacity-90 hover:opacity-100 transition">Inicio</a></li>
+                        <li><a href="servicios.html" class="opacity-90 hover:opacity-100 transition">Servicios</a></li>
+                        <li><a href="propiedades.html" class="opacity-90 hover:opacity-100 transition">Propiedades</a></li>
+                        <li><a href="privacy.html" class="opacity-90 hover:opacity-100 transition">Sobre Nosotros</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contacto</h3>
+                    <p class="text-sm mb-3 opacity-90"><i class="fas fa-phone mr-2"></i><a href="tel:+5216641518081" class="hover:text-white transition">+521 664-151-8081</a></p>
+                    <p class="text-sm mb-3 opacity-90"><i class="fab fa-whatsapp mr-2"></i><a href="https://wa.me/5216641518081" class="hover:text-white transition" target="_blank">WhatsApp</a></p>
+                </div>
+            </div>
+
+            <div class="border-t border-white border-opacity-20 pt-8 text-center text-sm opacity-75">
+                <p>&copy; 2026 MinVal. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/properties.js"></script>
+</body>
+</html>
