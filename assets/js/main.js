@@ -5,7 +5,7 @@ function navigateTo(page) {
 
 // Funciones para botones de contacto
 function callPhone() {
-    window.location.href = 'tel:+5216641518081';
+    window.location.href = 'tel:6641518081';
 }
 
 function openWhatsApp() {
@@ -13,7 +13,7 @@ function openWhatsApp() {
 }
 
 function sendEmail() {
-    window.location.href = 'mailto:info@minval.com.co';
+    window.location.href = 'minvaluacion@gmail.com';
 }
 
 // Scroll suave para anclas

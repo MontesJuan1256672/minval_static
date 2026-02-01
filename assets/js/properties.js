@@ -3,121 +3,66 @@ const properties = [
     {
         id: 1,
         type: 'casa',
-        titulo: 'Casa Moderna en Residencial Rio Tijuana',
-        precio: '$850,000',
-        ubicacion: 'Residencial Rio Tijuana',
-        caracteristicas: {
-            habitaciones: 3,
-            baños: 2.5,
-            m2: 280,
-            estacionamientos: 2
-        },
-        descripcion: 'Hermosa casa de tres pisos con diseño moderno, ubicada en uno de los residenciales más exclusivos de Tijuana.',
-        imagenes: [
-            'assets/images/properties/casa1/principal.jpg',
-            'assets/images/properties/casa1/sala.jpg',
-            'assets/images/properties/casa1/cocina.jpg',
-            'assets/images/properties/casa1/jardin.jpg'
-        ]
-    },
-    {
-        id: 2,
-        type: 'departamento',
-        titulo: 'Departamento de Lujo en Centro de Tijuana',
-        precio: '$450,000',
-        ubicacion: 'Centro de Tijuana',
+        titulo: 'Casa amplia a minutos de la nueva garita',
+        precio: '$2,750,000',
+        ubicacion: 'Las Torres Otay',
         caracteristicas: {
             habitaciones: 2,
-            baños: 2,
-            m2: 120,
-            estacionamientos: 1
+            baños: 3,
+            m2: 280,
+            estacionamientos: 3
         },
-        descripcion: 'Moderno departamento en el corazón del centro, con acceso a todos los servicios y comercios cercanos.',
+        descripcion: 'Hermosa casa de dos pisos, con aplios espacios y acabados estilo rustico. Con opción para ampliación.',
         imagenes: [
-            'assets/images/properties/depto1/principal.jpg',
-            'assets/images/properties/depto1/sala.jpg',
-            'assets/images/properties/depto1/recamara.jpg',
-            'assets/images/properties/depto1/vista.jpg'
+            'assets/images/properties/casa1/1.jpeg',
+            'assets/images/properties/casa1/2.jpeg',
+            'assets/images/properties/casa1/3.jpeg',
+            'assets/images/properties/casa1/4.jpeg',
+            'assets/images/properties/casa1/5.jpeg'
         ]
     },
     {
         id: 3,
         type: 'terreno',
-        titulo: 'Terreno Comercial en Vía Rápida Poniente',
-        precio: '$600,000',
-        ubicacion: 'Vía Rápida Poniente',
+        titulo: 'Terreno turistico/habitacional en San Felipe',
+        precio: '$165 por m2',
+        ubicacion: 'Dorado Ranch San Felipe',
         caracteristicas: {
             habitaciones: 0,
             baños: 0,
-            m2: 500,
+            m2: 22.1,
+            unidad: 'hectáreas',
             estacionamientos: 0
         },
-        descripcion: 'Excelente oportunidad de inversión. Terreno en zona comercial con alto flujo vehicular y potencial de crecimiento.',
+        descripcion: 'Excelente oportunidad de inversión. Predio rustico/habitacional al precio más barato en la zona.',
         imagenes: [
-            'assets/images/properties/terreno1/principal.jpg',
-            'assets/images/properties/terreno1/vista1.jpg',
-            'assets/images/properties/terreno1/vista2.jpg',
-            'assets/images/properties/terreno1/croquis.jpg'
-        ]
-    },
-    {
-        id: 4,
-        type: 'casa',
-        titulo: 'Casa con Alberca en Playas de Tijuana',
-        precio: '$1,200,000',
-        ubicacion: 'Playas de Tijuana',
-        caracteristicas: {
-            habitaciones: 4,
-            baños: 3,
-            m2: 400,
-            estacionamientos: 3
-        },
-        descripcion: 'Lujosa casa frente a playa con piscina, jacuzzi y vistas al océano. Una inversión única en la zona.',
-        imagenes: [
-            'assets/images/properties/casa2/principal.jpg',
-            'assets/images/properties/casa2/alberca.jpg',
-            'assets/images/properties/casa2/comedor.jpg',
-            'assets/images/properties/casa2/playa.jpg'
-        ]
-    },
-    {
-        id: 5,
-        type: 'departamento',
-        titulo: 'Departamento en Condominio Boulevard Agua Caliente',
-        precio: '$380,000',
-        ubicacion: 'Boulevard Agua Caliente',
-        caracteristicas: {
-            habitaciones: 2,
-            baños: 2,
-            m2: 100,
-            estacionamientos: 1
-        },
-        descripcion: 'Departamento en condominio con amenidades completas: gimnasio, alberca, salón de eventos y área infantil.',
-        imagenes: [
-            'assets/images/properties/depto2/principal.jpg',
-            'assets/images/properties/depto2/sala.jpg',
-            'assets/images/properties/depto2/cocina.jpg',
-            'assets/images/properties/depto2/amenidades.jpg'
+            'assets/images/properties/terreno1/1.jpg',
+            'assets/images/properties/terreno1/2.jpg',
+            'assets/images/properties/terreno1/3.png',
+            'assets/images/properties/terreno1/1.mp4'
         ]
     },
     {
         id: 6,
         type: 'terreno',
-        titulo: 'Terreno Residencial en Zona Norte',
-        precio: '$350,000',
-        ubicacion: 'Zona Norte',
+        titulo: 'Terreno Rustico en ruta del vino',
+        precio: '$75,000 dlls',
+        ubicacion: 'Carretera libre Tecate-Ensenada',
         caracteristicas: {
-            habitaciones: 0,
-            baños: 0,
-            m2: 350,
+            habitaciones: 1,
+            baños: 1,
+            m2: 1000,
             estacionamientos: 0
         },
-        descripcion: 'Terreno plano e ideal para construir tu casa de ensueño. Zona tranquila con servicios disponibles.',
+        descripcion: 'Terreno rustico dentro de Rancho el Fresno el cual cuenta con contenedor adaptado para vivienda y amenidades.',
         imagenes: [
-            'assets/images/properties/terreno2/principal.jpg',
-            'assets/images/properties/terreno2/vista1.jpg',
-            'assets/images/properties/terreno2/plano.jpg',
-            'assets/images/properties/terreno2/zona.jpg'
+            'assets/images/properties/terreno2/1.jpeg',
+            'assets/images/properties/terreno2/2.jpeg',
+            'assets/images/properties/terreno2/3.jpeg',
+            'assets/images/properties/terreno2/4.jpeg',
+            'assets/images/properties/terreno2/5.jpeg',
+            'assets/images/properties/terreno2/6.jpeg',
+            'assets/images/properties/terreno2/7.png'
         ]
     }
 ];
@@ -180,7 +125,7 @@ function renderProperties(filter = 'all') {
                     ` : ''}
                     <div class="flex items-center">
                         <i class="fas fa-ruler-combined mr-1" style="color: var(--primary);"></i>
-                        <span>${property.caracteristicas.m2} m²</span>
+                        <span>${property.caracteristicas.m2} ${property.caracteristicas.unidad || 'm²'}</span>
                     </div>
                 </div>
 
@@ -222,76 +167,35 @@ function openGallery(propertyId) {
 
     // Crear modal
     const modal = document.createElement('div');
-    modal.className = 'fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4';
+    modal.className = 'fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50';
     modal.id = 'galleryModal';
     
     let imageIndex = 0;
     const images = property.imagenes;
 
     modal.innerHTML = `
-        <div class="bg-white rounded-lg max-w-4xl w-full overflow-hidden">
-            <div class="flex justify-between items-center p-4 border-b">
-                <h2 class="text-2xl font-bold">${property.titulo}</h2>
-                <button onclick="closeGallery()" class="text-3xl text-gray-600 hover:text-gray-900">
-                    <i class="fas fa-times"></i>
-                </button>
+        <div class="relative w-full h-full flex items-center justify-center">
+            <div id="mediaContainer" class="w-full h-full flex items-center justify-center">
+                ${images[0].endsWith('.mp4') ? 
+                    `<video id="mainMedia" src="${images[0]}" class="max-w-full max-h-full object-contain" controls></video>` :
+                    `<img id="mainMedia" src="${images[0]}" alt="Galería" class="max-w-full max-h-full object-contain">`
+                }
             </div>
             
-            <div class="relative bg-gray-900">
-                <img id="mainImage" src="${images[0]}" alt="Galería" class="w-full h-96 object-cover">
-                
-                <button onclick="previousImage()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-12 h-12 flex items-center justify-center text-2xl transition">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                
-                <button onclick="nextImage()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-12 h-12 flex items-center justify-center text-2xl transition">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-                
-                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-full text-sm">
-                    <span id="imageCounter">1</span> / ${images.length}
-                </div>
-            </div>
+            <button onclick="previousImage()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-14 h-14 flex items-center justify-center text-2xl transition z-10">
+                <i class="fas fa-chevron-left"></i>
+            </button>
             
-            <div class="p-6">
-                <div class="grid grid-cols-4 gap-3">
-                    ${images.map((img, idx) => `
-                        <img src="${img}" alt="Thumbnail ${idx + 1}" class="w-full h-20 object-cover rounded cursor-pointer border-2 hover:border-amber-600 transition" onclick="selectImage(${idx})">
-                    `).join('')}
-                </div>
-
-                <div class="mt-6 p-4 bg-gray-50 rounded-lg">
-                    <h3 class="font-bold text-lg mb-2">Información de la Propiedad</h3>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div>
-                            <p class="text-gray-600 text-sm">Ubicación</p>
-                            <p class="font-semibold">${property.ubicacion}</p>
-                        </div>
-                        <div>
-                            <p class="text-gray-600 text-sm">Precio</p>
-                            <p class="font-semibold text-2xl" style="color: var(--primary);">${property.precio}</p>
-                        </div>
-                        <div>
-                            <p class="text-gray-600 text-sm">Superficie</p>
-                            <p class="font-semibold">${property.caracteristicas.m2} m²</p>
-                        </div>
-                        ${property.caracteristicas.habitaciones > 0 ? `
-                        <div>
-                            <p class="text-gray-600 text-sm">Recámaras</p>
-                            <p class="font-semibold">${property.caracteristicas.habitaciones}</p>
-                        </div>
-                        ` : ''}
-                    </div>
-                </div>
-
-                <div class="mt-6 flex gap-4">
-                    <button onclick="openWhatsApp()" class="flex-1 btn-primary">
-                        <i class="fab fa-whatsapp mr-2"></i>Contactar por WhatsApp
-                    </button>
-                    <button onclick="callPhone()" class="flex-1 btn-accent">
-                        <i class="fas fa-phone mr-2"></i>Llamar
-                    </button>
-                </div>
+            <button onclick="nextImage()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-14 h-14 flex items-center justify-center text-2xl transition z-10">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <button onclick="closeGallery()" class="absolute top-6 right-6 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-12 h-12 flex items-center justify-center text-2xl transition z-10">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black bg-opacity-70 text-white px-4 py-2 rounded-full text-sm">
+                <span id="imageCounter">1</span> / ${images.length}
             </div>
         </div>
     `;
@@ -320,17 +224,16 @@ function previousImage() {
 
 function selectImage(index) {
     window.currentImageIndex = index;
-    document.getElementById('mainImage').src = window.currentImages[index];
+    const media = window.currentImages[index];
+    const container = document.getElementById('mediaContainer');
+    
+    if (media.endsWith('.mp4')) {
+        container.innerHTML = `<video id="mainMedia" src="${media}" class="max-w-full max-h-full object-contain" controls></video>`;
+    } else {
+        container.innerHTML = `<img id="mainMedia" src="${media}" alt="Galería" class="max-w-full max-h-full object-contain">`;
+    }
+    
     document.getElementById('imageCounter').textContent = index + 1;
-
-    // Actualizar thumbnails
-    document.querySelectorAll('.grid.grid-cols-4 img').forEach((img, idx) => {
-        if (idx === index) {
-            img.style.borderColor = 'var(--primary)';
-        } else {
-            img.style.borderColor = 'transparent';
-        }
-    });
 }
 
 // Inicializar
