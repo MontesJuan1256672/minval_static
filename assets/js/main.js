@@ -13,7 +13,7 @@ function openWhatsApp() {
 }
 
 function sendEmail() {
-    window.location.href = 'minvaluacion@gmail.com';
+    window.location.href = 'mailto:minvaluacion@gmail.com';
 }
 
 // Scroll suave para anclas

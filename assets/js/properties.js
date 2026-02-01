@@ -46,12 +46,13 @@ const properties = [
         id: 6,
         type: 'terreno',
         titulo: 'Terreno Rustico en ruta del vino',
-        precio: '$75,000 dlls',
+        precio: '$80,000 dlls',
         ubicacion: 'Carretera libre Tecate-Ensenada',
         caracteristicas: {
             habitaciones: 1,
             baños: 1,
-            m2: 1000,
+            m2: 1500,
+            unidad: 'm²',
             estacionamientos: 0
         },
         descripcion: 'Terreno rustico dentro de Rancho el Fresno el cual cuenta con contenedor adaptado para vivienda y amenidades.',
